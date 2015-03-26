@@ -1,0 +1,89 @@
+
+".container" : {
+  backgroundColor : Alloy.CFG.Colors.BackgroundColor,
+  width : Ti.UI.FILL,
+  height : Ti.UI.FILL
+},
+
+".imgUserProfile" : {
+
+	left : 15,
+	top : 15,
+	border : 1
+	
+},
+
+".txtInfo" : {
+	color : Alloy.CFG.Colors.TextColor,
+	backgroundColor : '#44000000',
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+},
+
+".txtAbout" : {
+	color : Alloy.CFG.Colors.TextColor,
+	//backgroundColor : '#44000000',
+	textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+},
+
+".infoView" : {
+	//left : 100,
+	top : 15,
+	right : 15,
+	width : Ti.UI.FILL,
+	height : Ti.UI.SIZE
+},
+
+".imgUserBgPhoto" : {
+	top : 0,
+	//image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiZRAeey3p4jyxLxf20ZhDha0Bz8Qn1lqH3S8IoLQV65_9GbQo",
+	//width : Ti.UI.FILL,
+	height : 250,
+	//image: "images/pyephyohan-bg.jpg"
+},
+
+".txtborder" : {
+	borderWidth : 1,
+	borderColor : Alloy.CFG.Colors.MainColor,
+},
+
+".btnTab1" : {
+	backgroundColor : Alloy.CFG.Colors.BackgroundColor,
+	backgroundSelectedColor : Alloy.CFG.Colors.MainColor_Dark,
+	color : Alloy.CFG.Colors.TextColor2,
+	backgroundImage : "null",
+	selectedColor : "#AAA"
+}
+
+".btnTab2" : {
+	backgroundColor : Alloy.CFG.Colors.ProfileTabColor,
+	backgroundSelectedColor : Alloy.CFG.Colors.MainColor_Dark,
+	color : Alloy.CFG.Colors.TextColor2,
+	backgroundImage : "null",
+	selectedColor : "#AAA"
+},
+
+".register" : {
+	backgroundColor : Alloy.CFG.Colors.MainColor,
+	backgroundSelectedColor : Alloy.CFG.Colors.MainColor_Dark,
+	borderColor : Alloy.CFG.Colors.MainPressedColor,
+	color : Alloy.CFG.Colors.TextColor,
+	backgroundImage : "null",
+	selectedColor : "#AAA"
+},
+
+".icon" : {
+	width : 20,
+	height : 20,
+	left : 5,
+	right :5
+},
+".iconSmall" : {
+	width : 15,
+	height : 15,
+	left : 5,
+	right :5
+}
+
+
+
+

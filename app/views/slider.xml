@@ -1,0 +1,17 @@
+<Alloy>
+	<Window class="h-fill w-fill ver" backgroundColor="#FFF" navBarHidden="true">
+		<View  class="title-bg">
+	    	<View class="h-size" id="AppWrapper">
+
+			    <Label id="mainTitle" class="title links" text="Gallery" left="30" onClick="closeWindow"></Label>
+				<ImageView id="imgBack" class="iconBig left0" onClick="closeWindow" ></ImageView>
+
+			</View>
+		</View>
+		
+		<ScrollableView id="scroller" class="w-fill h-fill">
+			
+			
+		</ScrollableView>
+	</Window>
+</Alloy>

@@ -1,0 +1,25 @@
+<Alloy>
+	<View class=" w-size h-size top3" id="reviewContainer">
+		<ImageView class="imReviewer top1 left1" id="imReviewer" />
+		
+		<View class="ver h-size top0" left="60" id="reviewView">
+			<Label id="lblReviewer" class="w-fill p text-left top0 h-size" color="#464646" >
+				Review User
+			</Label>
+			<Label  id="lblReview" class="w-fill p text-left top0 h-size"  color="#464646">
+				Review Message
+			</Label>
+			
+			
+			<View class="h-size w-size hor top1 left1" id="gotoView">
+				
+				<ImageView class="top0 left0 iconSmall" id="imgTime">
+				</ImageView>
+				<Label  id="lblReviewTime" class="top0 w-size  p-medium   text-left h-size"  color="#464646">
+					Review Date & Time
+				</Label>
+			</View>
+			
+		</View>
+	</View>
+</Alloy>

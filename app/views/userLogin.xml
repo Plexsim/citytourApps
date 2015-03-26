@@ -1,0 +1,42 @@
+<Alloy>
+	<Window class="container" >
+		<View  class="title-bg">
+	    	<View class="h-size" id="AppWrapper">
+			    <Label id="mainTitle" class="title links" text="Login" left="30" onClick="closeWindow"></Label>
+				<ImageView id="imgBack" class="iconBig left0" onClick="closeWindow"></ImageView>
+			</View>
+		</View>
+		<ScrollView class="loginView" layout="vertical">
+					
+			<View id="userLoginView" class=" top1 left3 right3 ver">
+			<View  class="h-size w-size hor top1" left="0">
+				<ImageView class="top3 iconSmall" id="imgEmailLogin">
+				</ImageView>
+				<Label class="p-strong text-left h-size" top="9" color="#464646" id="lblEmail">
+					Email
+				</Label>
+			</View>
+			<TextField class="txt span12 txtborder top1" id="txtEmail" hintText="Email" ></TextField>
+		
+			<View  class="h-size w-size hor top1" left="0">
+				<ImageView class="top3 icon" id="imgPasswordLogin">
+				</ImageView>
+				<Label class="p-strong text-left h-size" top="13" color="#464646" id="lblPassword">
+					Password
+				</Label>
+			</View>
+			
+			<TextField class="txt span12 txtborder top1" id="txtPassword" hintText="Password" passwordMask="true"></TextField>
+		
+			<Button id="btnLogin" class=" p top4 bottom2 span12 register" title=" Login " onClick="openUserLogin"/>
+			
+			<Button id="btnRegister" class="p top4 bottom2 span12 register" title=" Register " onClick="openUserRegister" />
+			
+			<Button id="btnForgot"  class="p top2 bottom2 span12 register" title=" Forgot Password " onClick="openForgotPassword" />
+		</View>
+				
+				
+		</ScrollView>
+	</Window>
+
+</Alloy>

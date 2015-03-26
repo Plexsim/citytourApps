@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container" >
+		<View  class="title-bg">
+	    	<View class="h-size" id="AppWrapper">
+			    <Label id="mainTitle" class="title links" text="Item Grid" left="25"  onClick="closeWindow"></Label>
+				<ImageView id="imgBack" class="iconBig left0" onClick="closeWindow" ></ImageView>
+			</View>
+		</View>
+		<View class="hor w-fill h-size" right="3" left="3" bottom="5">
+			<TextField class="txt span12 txtborder top1" id="txtSearch" hintText="Keyword Search" ></TextField>
+		</View>
+	</Window>
+</Alloy>

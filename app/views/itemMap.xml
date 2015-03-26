@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="container" id="mapWindow">
+		<View  class="title-bg">
+	    	<View class="h-size" id="AppWrapper">
+			    <Label id="mainTitle" class="title links" text="Explore On Map" left="25" onClick="closeWindow"></Label>
+				<ImageView id="imgBack" class="iconBig left0" onClick="closeWindow"></ImageView>
+			</View>
+		</View>
+		
+		<ScrollView id="mapView" class="mapView">
+			
+		</ScrollView>
+	</Window>
+</Alloy>

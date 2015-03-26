@@ -1,0 +1,215 @@
+<Alloy>
+	<ScrollView class="container" id="profileScrollView" layout="vertical">
+		<View id="userProfileView" class="w-size h-size ver">
+			<View id="userInfoView" class="h-size w-fill">
+				<ImageView class="imgUserBgPhoto" id="userBackgroundPhoto" />
+				
+				
+					<ImageView class="imgUserProfile" id="userProfilePhoto" > </ImageView>
+					
+					<View class="infoView ver" id="aboutmeView">
+						<Label class="span12 p-strong text-left h-size txtInfo" id="lblUserName">
+							User Name
+						</Label>
+						
+						<Label class="span12 p-strong text-left h-size txtAbout top3" id="lblAboutMe">
+						</Label>
+						
+						<View class="h-size w-fill" height='55'>
+							
+							<View id="uploadContainer" class="h-size w-size ver">
+							
+								<View class="h-size w-size hor top1" left="0">
+									<ImageView class="bottom0 icon" id="imgProfilePhotoUpload">
+									
+									</ImageView>
+									<Label color="#454545" id="lblProfilePhoto" class="p h-size w-size" onClick="profilePhotoUpload" >Profile Photo</Label>
+									
+								</View>
+								
+								<View class="h-size w-size hor top1" left="0">
+									<ImageView class="bottom0 icon" id="imgBackgroundPhotoUpload">
+									
+									</ImageView>
+									<Label color="#454545" id="lblBGPhoto" class="p h-size w-size" onClick="backgroundPhotoUpload" >Background Photo</Label>
+									
+								</View>
+								
+							</View>
+							
+						</View>
+						
+						
+									
+					</View>
+					
+					
+					
+					
+				
+			</View>
+			
+			<View class="w-fill h-size hor" >
+				<Button class="btnTab1 p span6 "  title=" Edit Info " id="btnInfoEdit" onClick="showInfoEdit" />
+				<Button class="btnTab2 p span6 " left="1" title=" Change Password " id="btnPasswordEdit" onClick="showPasswordEdit" />
+			</View>
+			
+			<View class="ver w-fill h-size top1 left3 right3" id="infoEdit">
+				
+				<View  class="h-size w-size hor top1" left="0">
+					<ImageView class="top3 icon" id="imgNameProfile">
+					</ImageView>
+					<Label id="lblNameProfile" class="p-strong text-left h-size" top="13" color="#464646">
+						Name
+					</Label>
+				</View>
+				
+				<TextField class="txt span12 txtborder top1" id="txtUserName" hintText="User Name" ></TextField>
+				
+				<View  class="h-size w-size hor top1" left="0">
+					<ImageView class="top3 iconSmall" id="imgEmailProfile">
+					</ImageView>
+					<Label id="lblEmailProfile" class="p-strong text-left h-size" top="9" color="#464646">
+						Email
+					</Label>
+				</View>
+				
+				<TextField class="txt span12 txtborder top1" id="txtEmailProfile" hintText="Email" ></TextField>
+				
+				<View  class="h-size w-size hor top1" left="0">
+					<ImageView class="top3 icon" id="imgAboutMeProfile">
+					</ImageView>
+					<Label id="lblAboutProfile" class="p-strong text-left h-size" top="13" color="#464646">
+						About Me
+					</Label>
+				</View>
+				
+				<TextArea class="txtArea span12 txtborder top1" id="txtAboutMe" hintText="About Me" ></TextArea>
+				
+				<Button id="btnUpdateProfile" class="p top4 bottom2 span12 register" title=" Update Profile " onClick="doUpdateProfile" />
+			
+				
+			</View>
+			
+			<View class="ver w-fill h-size top1 left3 right3" visible="false" height='0' id="passwordEdit">
+				
+				<View  class="h-size w-size hor top1" left="0">
+					<ImageView class="top3 icon" id="imgNewPassword">
+					</ImageView>
+					<Label id="lblNewPassword" class="p-strong text-left h-size top3" color="#464646">
+						New Password
+					</Label>
+				</View>
+				
+				<TextField class="txt span12 txtborder top1 password" id="txtNewPassword" hintText="New Password" ></TextField>
+				
+				<View  class="h-size w-size hor top1" left="0">
+					<ImageView class="top3 icon" id="imgConfirmPassword">
+					</ImageView>
+					<Label id="lblConfirmPassword" class="p-strong text-left h-size" top="13" color="#464646">
+						Confirm Password
+					</Label>
+				</View>
+				<TextField class="txt span12 txtborder top1 password" id="txtConfirmPassword" hintText="Confirm Password" ></TextField>
+				
+				
+				<Button id="btnUpdatePassword" class="p top4 bottom2 span12 register" title=" Update Password " onClick="doChangePassword" />
+			
+				
+			</View>
+		</View>
+		
+		
+		
+		<View id="userLoginView" class=" top1 left3 right3 ver">
+			
+			<Label id="lblLoginTitle" class="span12 p-strong text-left h-size top3" color="#464646"> Please login to see your profile.</Label>
+			
+			<View  class="h-size w-size hor top1" left="0">
+				<ImageView class="top3 iconSmall" id="imgEmailLogin">
+				</ImageView>
+				
+				<Label class="p-strong text-left h-size" top="9" color="#464646" id="lblEmailLogin">
+					Email
+				</Label>
+			</View>
+			
+			<TextField class="txt span12 txtborder top1" id="txtEmail" hintText="Email" ></TextField>
+		
+			<View  class="h-size w-size hor top1" left="0">
+				<ImageView class="top3 icon" id="imgPasswordLogin">
+				</ImageView>
+				<Label class="p-strong text-left h-size" top="13" color="#464646" id="lblPasswordLogin">
+					Password
+				</Label>
+			</View>
+			
+			<TextField class="txt span12 txtborder top1" id="txtPassword" hintText="Password" passwordMask="true"></TextField>
+		
+			<Button id="btnLogin" class="p top4 bottom2 span12 register" title=" Login " onClick="doLogin" />
+			
+			
+			<Button id="btnRegisterLogin" class="p top4 bottom2 span12 register" title=" Register " onClick="openRegister" />
+			
+			
+			<Button id="btnForgot" class="p top2 bottom2 span12 register" title=" Forgot Password " onClick="openForgotPassword" />
+		</View>
+		
+		<View id="userRegisterView" class=" top1 left3 right3 ver">
+			
+			<Label id="lblRegisterTitle" class="span12 p-strong text-left h-size top3" color="#464646"> Please register CityTour account.</Label>
+			
+			<View  class="h-size w-size hor top1" left="0">
+				<ImageView class="top3 icon" id="imgNameRegister">
+				</ImageView>
+				<Label class="p-strong text-left h-size" top="13" color="#464646" id="lblNameRegister">
+					Name
+				</Label>
+			</View>
+			<TextField class="txt span12 txtborder top1" id="txtUserNameRegister" hintText="Name" ></TextField>
+			
+			<View  class="h-size w-size hor top1" left="0">
+				<ImageView class="top3 iconSmall" id="imgEmailRegister">
+				</ImageView>
+				<Label class="p-strong text-left h-size" top="9" color="#464646" id="lblEmailRegister">
+					Email (To Login System)
+				</Label>
+			</View>
+			<TextField class="txt span12 txtborder top1" id="txtEmailRegister" hintText="Email" ></TextField>
+			
+			<View  class="h-size w-size hor top1" left="0">
+				<ImageView class="top3 icon" id="imgPasswordRegister">
+				</ImageView>
+				<Label class="p-strong text-left h-size" top="13" color="#464646" id="lblPasswordRegister">
+					Password
+				</Label>
+			</View>
+			
+			<TextField class="txt span12 txtborder top1 password" id="txtPasswordRegister" hintText="Password" ></TextField>
+			
+			<Button id="btnRegister" class="p top4 bottom2 span12 register" title=" Register " onClick="doRegister" />
+		
+			
+		</View>
+		
+		<View id="forgotPasswordView" class=" top1 left3 right3 ver">
+			<Label id="lblForgotTitle" class="span12 p-strong text-left h-size top3" color="#464646"> Please provide your registered email for next instruction.</Label>
+			
+			<View  class="h-size w-size hor top1" left="0">
+				<ImageView class="top3 iconSmall" id="imgEmailForgot">
+				</ImageView>
+				
+				<Label id="lblEmailForgot" class="p-strong text-left h-size" top="9" color="#464646">
+					Email
+				</Label>
+			</View>
+			
+			<TextField class="txt span12 txtborder top1" id="txtEmailForgot" hintText="Email" ></TextField>
+			
+			<Button id="btnRequest" class="p top4 bottom2 span12 register" title=" Request " onClick="doForgot" />
+		
+			
+		</View>
+		
+	</ScrollView>
+</Alloy>

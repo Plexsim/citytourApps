@@ -1,0 +1,26 @@
+<Alloy>
+	<View class=" w-fill h-size top3" id="feedContainer" width="300" onClick="openFeedDetail">
+		<ImageView class="imgFeed top1 left1" id="imgFeed" />
+		
+		<View class=" w-size ver h-size top0" left="80" id="reviewView">
+			<Label id="lblFeedTitle" class="w-fill p text-left top0 h-size" color="#464646" >
+				Feed Title
+			</Label>
+			<Label  id="lblFeedDesc" class="w-fill p text-left top0 h-size" height="100"  color="#464646">
+				Feed Desc
+			</Label>
+			
+			<View class="h-size w-size hor top1 left1" id="gotoView">
+				
+				<ImageView class="top0 left0 iconSmall" id="imgTime">
+				</ImageView>
+				<Label  id="lblFeedTime" class="top0 w-size p-medium text-left h-size"  color="#464646">
+					 Date & Time
+				</Label>
+			</View>
+			
+		</View>
+		
+	</View>
+	
+</Alloy>

@@ -1,0 +1,9 @@
+".container" : {
+	height : 101,
+	width : 120,
+	
+},
+".imCategoryImage" : {
+	width : 50,
+	height : 50
+}

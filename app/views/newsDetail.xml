@@ -1,0 +1,45 @@
+<Alloy>
+	<Window class="container" >
+		<View  class="title-bg">
+	    	<View class="h-size" id="AppWrapper">
+			    <Label id="mainTitle" class="title links" text="News Detail" left="30"  onClick="closeWindow"></Label>
+				<ImageView id="imgBack" class="icon left0" onClick="closeWindow" ></ImageView>
+			</View>
+		</View>
+		
+		<ScrollView id="midContainer" class="ver h-fill w-fill">
+			
+			<View class="h-size w-fill productImgView" id="itemImagesViewContainer">
+				<ImageView class="itemImages" id="itemImagesView" onClick="openSlider">
+				</ImageView>
+			</View>
+			<View class="ver h-fill w-fill" backgroundColor = "white">
+				<View id="thumbContainerView" class="hor top2 w-size" height="55">
+					
+					<ImageView class="iconNav" id="imgLeft" image="/images/backward.png" onClick='gotoLeftMost'></ImageView>
+					
+					<ScrollView id="thumbImagesScrollView" class="thumbImgScrollView" borderWidth='0'>
+					</ScrollView>
+					
+					
+					<ImageView class="iconNav" id="imgRight" image="/images/forward.png" onClick='gotoRightMost'></ImageView>
+					
+				</View>
+			
+				
+				<View id="infoContainer" class="ver h-size w-fill">
+					<Label id="lblTitle" class="w-fill p-strong top2 text-left h-size" color="#464646"></Label>
+					
+					<ImageView class="strike top1 bottom2" ></ImageView>
+					
+					<Label id="lblDescription" class="w-fill p text-left h-size" color="#464646">
+					</Label>
+					
+					<View class="line top1"></View>
+					
+						
+				</View>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

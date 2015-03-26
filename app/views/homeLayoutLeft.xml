@@ -1,0 +1,42 @@
+<Alloy>
+	<View class="container" layout="vertical">
+		<View class="h-size w-fill" layout="horizontal" borderWidth='1' borderColor="#FFF" >
+			<View class="w-size h-size borderA" id="bigImgView" onClick='openDetailOne'>
+				<ImageView class="left_img" id="imgLeftImg"></ImageView>
+				
+				<ImageView class="bottom0 shadow" id="shadow"  />
+				
+				<Label class="white p-bold h-size w-height bottom2 left2" id="catName">22</Label> 
+			</View>
+			<View layout="vertical" class="w-size h-size">
+				<View class="w-size h-size borderA" id="smallImgView1" onClick='openDetailTwo' >
+					<ImageView class="right_img" id="imgLeftImg2"></ImageView>
+				</View>
+				
+				<View class="w-size h-size borderA" id="smallImgView2" onClick='openDetailThree' >
+					<ImageView class="right_img" id="imgLeftImg3"></ImageView>
+				</View>
+			</View>
+		</View>
+		<View class="h-size w-fill" height='55'>
+			
+			<View class="h-size w-size hor top1" id="gotoView">
+
+				<ImageView class="icon" id="imgViewOnMap" onClick="openMap">
+				
+
+				</ImageView>
+				<Label class="p-special h-size w-size" onClick="openMap" id="lblViewOnMap" color="#454545">View On Map</Label>
+				
+
+				<ImageView class="icon"  left="15" id="imgViewOnGrid" onClick="openGrid">
+				
+
+				</ImageView>
+				<Label class="p-special h-size w-size" onClick="openGrid" id="lblViewOnGrid" color="#454545">View On Grid</Label>
+			</View>
+			
+		</View>
+		
+	</View>
+</Alloy>

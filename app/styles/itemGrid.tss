@@ -1,0 +1,21 @@
+".container" : {
+	backgroundColor:Alloy.CFG.Colors.BackgroundColor
+},
+".itemGridView" : {
+	height : Ti.UI.FILL,
+	width : Ti.UI.FILL
+},
+".icon" : {
+	width : 20,
+	height : 20,
+	left : 5,
+	right :5
+},
+".iconBig" : {
+	width : 30,
+	height : 30
+},
+".txtborder" : {
+	borderWidth : 1,
+	borderColor : Alloy.CFG.Colors.MainColor,
+}

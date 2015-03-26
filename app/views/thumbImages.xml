@@ -1,0 +1,6 @@
+<Alloy>
+	<View class="container top0" onClick="loadBigImage" id="categoryView" width="50" height="50" borderWidth="0" left='5'>
+		<ImageView class="imCategoryImage top0"  id="imCategoryImage"  thumbId="0">
+		</ImageView>
+	</View>
+</Alloy>

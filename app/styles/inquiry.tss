@@ -1,0 +1,39 @@
+
+".container" : {
+	backgroundColor:Alloy.CFG.Colors.BackgroundColor
+},
+".inquireView" : {
+	height : Ti.UI.FILL,
+	width : Ti.UI.FILL,
+	layout : 'vertical'
+},
+".txtborder" : {
+	borderWidth : 1,
+	borderColor : Alloy.CFG.Colors.MainColor,
+},
+".btnInquiry" : {
+	backgroundColor : Alloy.CFG.Colors.MainColor,
+	backgroundSelectedColor : Alloy.CFG.Colors.MainColor_Dark,
+	borderColor : Alloy.CFG.Colors.MainPressedColor,
+	color : Alloy.CFG.Colors.TextColor,
+	backgroundImage : "null",
+	selectedColor : "#AAA"
+},
+".icon" : {
+	width : 20,
+	height : 20,
+	left : 5,
+	right :5
+},
+".iconBig" : {
+	width : 30,
+	height : 30,
+	left : 5,
+	right :5
+},
+".iconSmall" : {
+	width : 15,
+	height : 15,
+	left : 5,
+	right :5
+}

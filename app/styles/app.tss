@@ -1,0 +1,810 @@
+/*
+ *  Ti Style Sheet v1.0
+ * 
+ *  Copyright 2014 
+ *  Licensed under the Apache License v2.0
+ *  
+ *  Designed and build by @tpsoe
+ * 
+ */
+
+/* 
+ *  Container
+ */
+".container" : {
+	backgroundColor : 'transparent',
+	opacity : 1.0,
+	width : Ti.UI.FILL,
+	height : Ti.UI.FILL,
+	layout : 'vertical',
+	navBarHidden : true
+}
+
+'.box' : {
+	top : 0,
+	borderWidth : 2,
+	borderColor : '#555',
+	borderRadius : 7,
+	backgroundImage : '/blur_bg.png',
+	opacity : 1,
+	height : Ti.UI.SIZE,
+	layout : 'vertical'
+}
+
+".ver" : {
+	layout : 'vertical'
+},
+
+".hor" : {
+	layout : "horizontal"
+},
+
+".br-advisr" : {
+	borderWidth : 1,
+	borderColor : "#00ccff"
+},
+
+/*
+ *  End Container
+ */
+/*
+ *  Typography
+ */
+
+// Headings
+
+// font height 18 font size is fix with 40 height
+// 18 font size = 40 height
+
+".h1" : {
+	font : {
+		fontSize : 38.5,
+		fontFamily: "Monda-Regular"
+	},
+	height : 85.55555555555556
+}
+
+".h2" : {
+	font : {
+		fontSize : 31.5,
+		fontFamily: "Monda-Regular"
+	},
+	height : 70
+}
+
+".h3" : {
+	font : {
+		fontSize : 24.5,
+		fontFamily: "Monda-Regular"
+	},
+	height : 54.44444444444444
+}
+
+".h4" : {
+	font : {
+		fontSize : 17.5,
+		fontFamily: "Monda-Regular"
+	},
+	height : 38.88888888888889
+}
+
+".h5" : {
+	font : {
+		fontSize : 14,
+		fontFamily: "Monda-Regular"
+	},
+	height : 31.11111111111111
+}
+
+".h6" : {
+	font : {
+		fontSize : 11.9,
+		fontFamily: "Monda-Regular"
+	},
+	height : 26.44444444444444
+}
+
+".h1-small" : {
+	font : {
+		fontSize : 24.5,
+		fontFamily: "Monda-Regular"
+	},
+	height : 54.44444444444444
+}
+
+".h2-small" : {
+	font : {
+		fontSize : 17.5,
+		fontFamily: "Monda-Regular"
+	},
+	height : 38.88888888888889
+}
+
+".h3-small" : {
+	font : {
+		fontSize : 14,
+		fontFamily: "Monda-Regular"
+	},
+	height : 31.11111111111111
+}
+
+".h4-small" : {
+	font : {
+		fontSize : 14,
+		fontFamily: "Monda-Regular"
+	},
+	height : 31.11111111111111
+}
+
+".p" : {
+	font : {
+		fontSize : 13,//18,
+		fontFamily: "Monda-Regular"
+	},
+	height : 33.3//40,
+	
+}
+".p-strong" : {
+	font : {
+		fontSize : 17,//18,
+		fontFamily: "Monda-Regular",
+		fontWeight : 'bold'
+	},
+	height : 36//48
+}
+".p-italics" : {
+	font : {
+		fontSize : 18,
+		fontFamily: "Monda-Regular",
+		fontStyle : 'italic'
+		
+	},
+	height : 40
+}
+".lead" : {
+	bottom : 20,
+	font : {
+		fontSize : 21,
+		fontWeight : 'bold',
+		fontFamily: "Monda-Regular"
+	},
+	height : Ti.UI.SIZE
+}
+".p-medium" : {
+	font : {
+		fontSize : 11,//14,
+		fontFamily: "Monda-Regular"
+	},
+	height : 24.4//31.1,
+}
+".p-special" : {
+	font : {
+		fontSize : 15,//14,
+		fontFamily: "Monda-Regular"
+	},
+	height : 24.4//31.1,
+}
+".small" : {
+	font : {
+		fontSize : 9,
+		fontFamily: "Monda-Regular"
+	},
+	height : 20,//26.6
+}
+
+".strong" : {
+	font : {
+		fontWeight : 'bold',
+		fontFamily: "Monda-Regular"
+	}
+}
+
+".italic" : {
+	font : {
+		fontStyle : 'italic',
+		fontFamily: "Monda-Regular"
+	}
+}
+
+".text-left" :{
+	textAlign : 'left'
+}
+
+".text-center" :{
+	textAlign : 'center'
+}
+
+".text-right" :{
+	textAlign : 'right'
+}
+
+".muted" : {
+	 color: '#999999'
+}
+
+".text-warning" : {
+  color: "#c09853"
+}
+
+".text-error" : {
+	color : '#b94a48'
+}
+
+".text-success" : {
+	color : "#468847"
+}
+
+".address" : {
+	textAlign : "left",
+	layout : "vertical"
+}
+
+".code" : {
+	font : {
+		fontSize : 16,
+		fontFamily: "Monda-Regular"
+	},
+	height : 35,
+	width : Ti.UI.SIZE,
+	backgroundColor : "#f9f2f4",
+	color : '#c7264e'
+}
+
+".code[platform=android]" : {
+	borderRadius : 5
+}
+
+".sBar" : {
+	barColor:'#00CCFF',
+	backgroundColor : "#00CCFF",
+	borderWidth : 0,
+	showCancel:false,
+	hintText:'search',
+	height : 41,
+	top : -1,
+	opacity : 1,
+	width : Ti.UI.FILL,
+	
+}
+
+".sBar[platform=android]" : {
+	top : 5,
+	left : 2,
+	bottom : 2,
+	borderRadius : 7,
+}
+
+/*
+ *  End Typography
+ */
+
+/*
+ *  Start Grid
+ */
+
+".w-fill" : {
+	width : Ti.UI.FILL
+}
+
+".h-fill" : {
+	height : Ti.UI.FILL
+}
+
+".w-size" : {
+	width : Ti.UI.SIZE
+}
+
+".h-size" : {
+	height : Ti.UI.SIZE
+},
+
+".w1" : {
+	width : 5
+},".w2" : {
+	width : 10
+},".w3" : {
+	width : 15
+},".w4" : {
+	width : 20
+},".w5" : {
+	width : 25
+},".w6" : {
+	width : 30
+},".w7" : {
+	width : 35
+},".w8" : {
+	width : 40
+},".w9" : {
+	width : 45
+},".w10" : {
+	width : 50
+},".w11" : {
+	width : 55
+},".w12" : {
+	width : 60
+},".w13" : {
+	width : 65
+},".w14" : {
+	width : 70
+},".w15" : {
+	width : 75
+},".w16" : {
+	width : 80
+},".w17" : {
+	width : 85
+},".w18" : {
+	width : 90
+},".w19" : {
+	width : 95
+},".w20" : {
+	width : 100
+},
+
+
+'.left0' : {
+	left : 0
+},
+'.left1' : {
+	left : 5
+}
+'.left2' : {
+	left : 10
+}
+'.left3' : {
+	left : 15
+}
+'.left4' : {
+	left : 20
+}
+'.left5' : {
+	left : 25
+}
+
+'.right0' : {
+	right : 0
+}
+'.right1' : {
+	right : 5
+}
+'.right2' : {
+	right : 10
+}
+'.right3' : {
+	right : 15
+}
+'.right4' : {
+	right : 20
+}
+'.right5' : {
+	right : 25
+}
+'.right6' : {
+	right : 30
+}
+
+'.top0' : {
+	top : 0
+}
+'.top1' : {
+	top : 5
+}
+'.top2' : {
+	top : 10
+}
+'.top3' : {
+	top : 15
+}
+'.top4' : {
+	top : 20
+}
+'.top5' : {
+	top : 25
+},
+
+".bottom0" : {
+	bottom : 0
+},
+'.bottom1' : {
+	bottom : 5
+}
+'.bottom2' : {
+	bottom : 10
+}
+'.bottom3' : {
+	bottom : 15
+}
+'.bottom4' : {
+	bottom : 20
+}
+'.bottom5' : {
+	bottom : 25
+}
+
+'.row' : {
+	layout : 'horizontal'
+}
+
+'.span12' :  {
+    width: '98%',
+    left : '1%',
+    right : '1%'
+}
+'.span11' : {
+    width: '89.60%',
+    left : '1%',
+    right : '1%'
+}
+'.span10' : {
+    width: '81.30%',
+    left : '1%',
+    right : '1%'
+}
+'.span9' : {
+    width: '73%',
+    left : '1%',
+    right : '1%'
+}
+'.span8' : {
+    width: '64.60%',
+    left : '1%',
+    right : '1%'
+}
+'.span7' :{
+    width: '56.30%',
+    left : '1%',
+    right : '1%'
+}
+'.span6' : {
+    width: '48%',
+    left : '1%',
+    right : '1%'
+}
+'.span5' :{
+    width: '39.60%',
+    left : '1%',
+    right : '1%'
+}
+'.span4' : {
+    width: '31.30%',
+    left : '1%',
+    right : '1%'
+}
+'.span3' :{
+    width: '23%',
+    left : '1%',
+    right : '1%'
+}
+'.span2' : {
+    width: '14.30%',
+    left : '1%',
+    right : '1%'
+}  
+'.span1' :{
+    width: '6.33%',
+    left : '1%',
+    right : '1%'
+}
+  
+".offset12" : {
+    left: "100%"
+}
+".offset11" :{
+    left: "91.66666666666666%"
+}
+".offset10" :{
+    left: "83.33333333333334%"
+}
+".offset9" :{
+    left: "75%"
+}
+".offset8" : {
+    left: "66.66666666666666%"
+}
+".offset7" : {
+    left: "58.333333333333336%"
+}
+".offset6" : {
+    left: "50%"
+}
+".offset5" :{
+    left: "41.66666666666667%"
+}
+".offset4" :{
+    left: "33.33333333333333%"
+}
+".offset3" : {
+    left: "25%"
+}
+".offset2" : {
+    left: "16.666666666666664%"
+}
+".offset1" : {
+	left : '8.333333333333332%'
+}
+
+/*
+ *  End Grid
+ */
+
+/*
+ *  Start Button
+ */
+".btn" : {
+	backgroundColor : '#9a9c9d',
+	backgroundSelectedColor : '#5c5e5e',
+	backgroundImage : "none",
+	borderRadius : 7,
+	borderWidth : 2,
+	borderColor : '#5c5e5e',
+	color : "#FFF",
+	font : {
+		fontFamily: "Monda-Regular"
+	}
+}
+
+".btn-advisr" : {
+	backgroundColor : '#e28f17',
+	backgroundSelectedColor : '#88550e',
+	borderColor : '#9f6410',
+	font : {
+		fontFamily: "Monda-Regular"
+	}
+}
+".btn-primary" : {
+	backgroundColor : '#428bca',
+	backgroundSelectedColor : '#285379',
+	borderColor : '#285379',
+	font : {
+		fontFamily: "Monda-Regular"
+	}
+}
+
+".btn-success" : {
+	backgroundColor: '#5cb85c',
+  	borderColor: '#376e37',
+  	backgroundSelectedColor : '#376e37',
+	font : {
+		fontFamily: "Monda-Regular"
+	},
+	backgroundFocusedColor : "#376e37"
+}
+
+".btn-info" : {
+	backgroundColor: '#5bc0de',
+  	borderColor: '#377385',
+  	backgroundSelectedColor : '#377385',
+	font : {
+		fontFamily: "Monda-Regular"
+	}
+}
+
+".btn-warning" : {
+	backgroundColor: '#f0ad4e',
+  	borderColor: '#90682f',
+  	backgroundSelectedColor : '#90682f',
+	font : {
+		fontFamily: "Monda-Regular"
+	}
+}
+
+".btn-danger" : {
+	backgroundColor: '#d9534f',
+  	borderColor: '#82322f',
+  	backgroundSelectedColor : '#82322f',
+	font : {
+		fontFamily: "Monda-Regular"
+	}
+}
+/*
+ *  End Button
+ */
+
+/*
+ *  Start TextField
+ */
+
+".txt" : {
+	backgroundColor : '#EEE',
+	color : '#222',
+	font : {
+		fontFamily: "Monda-Regular"
+	}
+	
+}
+".txt[platform=ios]" : {
+	borderRadius : 3,
+	height : 40,
+	paddingLeft : 5,
+	paddingRight : 5
+}
+
+".txt[platform=android]" : {
+	borderRadius : 7,
+}
+
+".password" : {
+	passwordMask : true
+}
+
+/* 
+ *  End TextArea
+ */
+/*
+ *  Start TextField
+ */
+
+".txtArea" : {
+	backgroundColor : '#EEE',
+	color : '#222',
+	font : {
+		fontFamily: "Monda-Regular"
+	}
+	
+}
+".txtArea[platform=ios]" : {
+	borderRadius : 3,
+	height : 120,
+	paddingLeft : 5,
+	paddingRight : 5
+}
+
+".txtArea[platform=android]" : {
+	borderRadius : 7,
+	height : 120
+}
+
+".title-right-icon" : {
+	width : 40,
+	height : 40,
+	right : 3
+},
+
+
+/* 
+ *  End TextArea
+ */
+
+/* 
+ *  Start Opacity
+ */
+".opacity1" : {
+	opacity : 1
+}
+".opacity2" : {
+	opacity : 0.9
+}
+".opacity3" : {
+	opacity : 0.8
+}
+".opacity4" : {
+	opacity : 0.7
+}
+".opacity5" : {
+	opacity : 0.6
+}
+".opacity6" : {
+	opacity : 0.5
+}
+".opacity7" : {
+	opacity : 0.4
+}
+".opacity8" : {
+	opacity : 0.3
+}
+".opacity9" : {
+	opacity : 0.2
+}
+".opacity10" : {
+	opacity : 0.1
+}
+".opacity-on" : {
+	opacity : 1
+}
+".opacity-off" : {
+	opacity : 0
+}
+/* 
+ *  End Opacity
+ */
+
+/*
+ *  Start Color 
+ */
+".white" : {
+	color : "#FFF"
+}
+".yellow" : {
+	color : "#FFCC00"
+}
+".red" : {
+	color : '#FF0000'
+}
+".green" : {
+	color : "#00FF00"
+}
+".blue" : {
+	color : '#0000FF'
+}
+
+".advisr" : {
+	color : '#e28f17'
+}
+".black" : {
+	color : "#000"
+}
+".dark-gray" : {
+	color : "#878787"
+}
+/* 
+ *  End Color
+ */
+
+/* 
+ *  Others
+ */
+'.hRuler' : {
+	height : 1,
+	backgroundImage : '/line.png',
+	width : Ti.UI.FILL
+}
+
+'.back' : {
+	backgroundImage : '/back.png',
+	height : 40,
+	width : 40,
+	left : 5
+}
+
+'.title-bg' : {
+	height : Ti.UI.SIZE,
+	width : Ti.UI.FILL,
+	backgroundColor : Alloy.CFG.Colors.MainColor,
+	top : 0
+	//backgroundImage : '/title_bg.png'
+}
+
+'.title' : {
+	font : {
+		fontSize : 20,
+		fontFamily: "Monda-Regular"
+	
+	},
+	height : 44.4,
+	color  : "#FFF",
+	left : 45
+},
+
+".title-left-icon" : {
+	
+	width : 40,
+	height : 40,
+	right : 8
+
+},
+
+".default-icon" : {
+	width : 40,
+	height : 40
+}
+
+".menu-default-icon" : {
+	width : 26,
+	height : 26
+}
+
+".backBtn":{
+	left:10,
+	right:5,
+	top:5,
+	bottom:5,
+	image:"/app/back.png",
+	width:40,
+	height:40	
+}
+".backLbl":{
+	font:{fontSize:20,fontWeight:"bold"},
+	height:40,
+	left:5,
+	right:10,
+	textAlign:"center"
+}

@@ -1,0 +1,45 @@
+<Alloy>
+	<Window class="container" >
+		<View  class="title-bg">
+	    	<View class="h-size" id="AppWrapper">
+			    <Label id="mainTitle" class="title links" text="Thanks for giving review" left="25" onClick="closeWindow"></Label>
+				<ImageView id="imgBack" class="iconBig left0" onClick="closeWindow"></ImageView>
+			</View>
+		</View>
+		<ScrollView class="reviewView" layout="vertical">
+					
+				<View class="ver w-fill h-size top1 left3 right3" id="infoEdit">
+					
+					
+					<View  class="h-size w-size hor top1" left="0">
+						<ImageView class="top3 icon" id="imgMessageReview">
+						</ImageView>
+						<Label class="p-strong text-left h-size" top="11" color="#454545" id="lblReviewMessage">
+							Your Review Message
+						</Label>
+					</View>
+					
+					<TextArea class="txtArea span12 txtborder top1" id="txtReviewMessage" hintText="Review Message" ></TextArea>
+					
+					
+					<View  class="h-size w-size hor top1" left="0">
+						<ImageView class="top3 icon" id="imgUserNameReview">
+						</ImageView>
+						<Label class="p-strong text-left h-size" top="13" id="lblName" color="#454545"/>
+					</View>
+					
+					<View  class="h-size w-size hor top1" left="0">
+						<ImageView class="top3 iconSmall" id="imgEmailReview">
+						</ImageView>
+						<Label class="p-strong text-left h-size" top="9" id="lblEmail" color="#454545"/>
+					</View>	
+					
+					<Button id="btnSubmit" class=" p top4 bottom2 span12 btnReview" title=" Submit Review " onClick="doReviewSubmit"/>
+				
+				</View>
+				
+				
+		</ScrollView>
+	</Window>
+
+</Alloy>

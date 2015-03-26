@@ -1,0 +1,21 @@
+<Alloy>
+	<Window class="win" id="index">
+		<!-- Start Slide Menu Code Here -->
+    	<Require type="widget" src="com.mcongrove.slideMenu" id="SlideMenu" />
+    	<!-- End Slide Menu Code Here -->
+    	<View  class="ver" id="AppWrapper">
+	        
+	        <View  class="title-bg">
+		    	<View class="h-size" >
+				    <Label id="mainTitle" class="title links" left="30" text="CityTour" onClick="openLeftMenu"></Label>
+					<ImageView id="imgSideMenu" class="icon" onClick="openLeftMenu"></ImageView>
+				</View>
+			</View>
+			
+			<View id="midContainer" bottom="0" >
+			
+			</View>
+			
+	    </View>
+	</Window>
+</Alloy>

@@ -1,0 +1,90 @@
+".container" : {
+	backgroundColor:Alloy.CFG.Colors.BackgroundColor
+},
+
+".imProductImage" : {
+	
+},
+".shadow" : {
+	backgroundImage : "/images/shadow.png",
+	width : 320,
+	height : 56,
+	opacity: 0.8
+},
+".icon" : {
+	
+	width : 20,
+	height : 20,
+	left : 6,
+	right : 6
+},
+".iconBig" : {
+	
+	width : 30,
+	height : 30,
+	left : 6,
+	right : 6
+},
+".productColorIcon" : {
+	//image : "/images/available_color/availableColorRed.png",
+	width : 22,
+	height : 22,
+	right : 3
+},
+".strike" : {
+	width : Ti.UI.FILL,
+	//left : 20,
+	//right : 20,
+	height : 0.7,
+	image : "/images/strikeDDD.png"
+},
+".login" : {
+	backgroundColor : Alloy.CFG.Colors.MainColor,
+	backgroundSelectedColor : Alloy.CFG.Colors.MainColor_Dark,
+	borderColor : Alloy.CFG.Colors.MainPressedColor,
+	color : Alloy.CFG.Colors.TextColor,
+	
+	backgroundImage : "null",
+	selectedColor : "#AAA"
+},
+".imgIconBackground":{
+	backgroundColor : '#44000000',
+	height : 30,
+	borderRadius : 5,
+	width: Ti.UI.FILL,
+		
+},
+".icon-big" : {
+	
+	width : 30,
+	height : 30,
+	left : 6,
+	right : 6
+},
+".iconNav" : {
+	
+	width : 20,
+	height : 20,
+	left : 6,
+	right : 6
+},
+".thumbImgScrollView" : {
+	layout : "horizontal",
+	width : Ti.UI.FILL,
+	showHorizontalScrollIndicator : true,
+	showVerticalScrollIndicator : false,
+	scrollType : "horizontal",
+	contentWidth : 1250
+},
+".socialViewContainer" :{
+	height : 30,
+	width: Ti.UI.FILL,
+},
+".imagesLabel":{
+	backgroundColor : '#44000000',
+	height : 30,
+	//borderRadius : 5,
+	width: Ti.UI.FILL,
+	left:3,
+	right:3
+}

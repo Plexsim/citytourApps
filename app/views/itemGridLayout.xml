@@ -1,0 +1,34 @@
+<Alloy>
+	<View class="w-size h-size ver" onClick="openItemDetail" >
+		
+			<View id="itemImgView" zIndex="1">
+				<ImageView class="img" id="itemImg" >
+					
+				</ImageView>
+			
+				<ImageView class="bottom0 shadow" id="shadow"  />
+				
+				<Label class="white p h-size w-height bottom1 left1" id="ItemName">22</Label> 
+			
+			</View>
+			
+			<View class="h-size w-size left0 bottom0 img_footer hor top1" id="socialView">
+				<ImageView class="bottom0 iconSmall top0" id="imgLike">
+				</ImageView>
+				<Label class="p h-size w-height" id="likeCount" color="#454545">0</Label> 
+				
+				<ImageView class="bottom0 iconSmall top0 left3" id="imgUnLike" text='0'>
+				</ImageView>
+				<Label class="p h-size w-height" id="unLikeCount" color="#454545">0</Label> 
+				
+				<ImageView class="bottom0 iconSmall top0 left3" id="imgReview" >
+				</ImageView>
+				<Label class="p h-size w-height" id="reviewCount" color="#454545">0</Label> 
+			</View>
+			
+			
+			
+		
+		
+	</View>
+</Alloy>

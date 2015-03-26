@@ -1,0 +1,98 @@
+<Alloy>
+	<Window navBarHidden = "true">
+		<View class="container">
+			<View  class="title-bg">
+		    	<View class="h-size" id="AppWrapper">
+				    <Label id="mainTitle" class="title links" text="Detail Information" left="30" onClick="closeWindow"></Label>
+					<ImageView id="imgBack" class="iconBig left0" onClick="closeWindow"></ImageView>
+					
+					<View class="title-right-icon" id="FavouriteView" visible="true" onClick="doFavourite">
+					<ImageView id="imgFavourite" class="icon" ></ImageView>
+					</View>
+					
+				</View>
+			</View>
+		
+			<ScrollView id="midContainer" class="ver h-fill w-size" >
+				<View class="w-size" height='300' borderWidth="0" id="productImgView" >
+					<ImageView  id="imProductImage" onClick="openSlider">
+					</ImageView>
+				</View>
+				
+				<View class='w-fill h-size ver' backgroundColor="white">
+					<View id="thumbContainerView" class="hor top2 w-size" borderWidth="0" height="55">
+						<ImageView class="iconNav" id="imgLeft" image="/images/backward.png" onClick='gotoLeftMost'></ImageView>
+						<ScrollView id="thumbImagesScrollView" class="thumbImgScrollView" borderWidth='0'>
+						</ScrollView>
+						<ImageView class="iconNav" id="imgRight" image="/images/forward.png" onClick='gotoRightMost'></ImageView>
+					</View>
+					
+					<View id="infoContainer" class="ver h-size w-fill">
+						<Label id="lblTitle" class="w-fill p-strong top2 text-left h-size" color="#464646">
+						</Label>
+						<View class="h-size w-fill left0 hor "  bottom="-3" id="socialView">
+							<View class="socialViewContainer"  id="iconBackground" layout="horizontal">
+								<ImageView class="icon" id="imgLike" onClick="doLike" >
+								</ImageView>
+								<Label class="p h-size w-height left0" id="likeCount" onClick="doLike"  color="#464646">0</Label> 
+								
+								<ImageView class="icon left3" id="imgUnLike" onClick="doUnLike" >
+								</ImageView>
+								<Label class="p h-size w-height left0" id="unLikeCount" onClick="doUnLike"  color="#464646">0</Label> 
+							 
+								<ImageView class="icon left3" width="20" height="20" id="imgReview" >
+								</ImageView>
+								<Label class="p h-size w-height left0" id="reviewCount" color="#464646">0</Label> 
+							
+							</View>
+						</View>
+							
+						<ImageView class="strike top1 bottom2" ></ImageView>
+						
+						<Label id="lblDescription" class="w-fill p text-left h-size" color="#464646">
+						</Label>
+						
+						<View class="h-size w-size top2" left="0" id="phoneView">
+							<ImageView class="left0 icon" id="imgPhone">
+							</ImageView>
+							<Label class="w-fill p text-left h-size" left="25" color="#464646" id="lblPhoneNo" onClick="doPhoneAction">
+								Phone No 
+							</Label>
+						</View>
+						
+						<View class="h-size w-size top2" left="0" id="locationView">
+							<ImageView class="left0 icon" id="imgLocation">
+							</ImageView>
+							<Label class="w-fill p text-left h-size" left="25" color="#464646" id="lblLocation"  onClick="openMap">
+								Location 
+							</Label>
+						</View>
+							
+						<Button  id="btnSendInquiry"  class="p top4 bottom2 span12 login" title=" Send Inquiry " onClick="openInquiry"/>
+						
+						<ImageView class="strike top2 bottom2" id="strike2"></ImageView>
+						
+						<View class="w-fill h-size">
+							
+							<View class="left0 w-size h-size hor" id="shareView" visible="true"> 
+								<ImageView class="left0 icon-big" id="imgFacebook" onClick="doFacebookShare">	</ImageView>
+								<ImageView class="icon-big" left="10" id="imgTwitter" onClick="doTwitterShare">	</ImageView>
+							</View>
+							
+							<View class="hor h-size w-size right0" onClick="openReview" id="writeItemReview">
+								<Label  id="lblWriteReview" class="w-size p-special text-right h-size lblWriteReview"  color="#454545">
+									Write Review
+								</Label>
+								<ImageView class="icon-big" id="imgWriteReviewIcon">
+								</ImageView>
+							</View>
+						</View>
+						
+						<View class="h-size w-fill ver bottom5" id="reviewView"></View>
+						<View class="h-size ver" id="adView"></View>	
+					</View>
+				</View>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,82 @@
+".container" : {
+	backgroundColor:Alloy.CFG.Colors.BackgroundColor
+},
+".itemImages" : {
+	width : 320,
+	height : 200
+},
+".shadowBackground" : {
+	backgroundImage : "/images/shadow.png",
+	width : 320,
+	height : 56,
+	opacity: 0.8
+},
+".icon" : {
+	width : 30,
+	height : 30,
+	left : 6,
+	right : 6
+},
+".strike" : {
+	width : Ti.UI.FILL,
+	height : 0.7,
+	image : "/images/strikeDDD.png"
+},
+".inquiry" : {
+	backgroundColor : Alloy.CFG.Colors.MainColor,
+	backgroundSelectedColor : Alloy.CFG.Colors.MainColor_Dark,
+	borderColor : Alloy.CFG.Colors.MainPressedColor,
+	color : Alloy.CFG.Colors.TextColor,
+	backgroundImage : "null",
+	selectedColor : "#AAA"
+},
+".imagesLabel":{
+	backgroundColor : '#44000000',
+	height : 30,
+	width: Ti.UI.FILL,
+	left:3,
+	right:3
+},
+".socialViewContainer" :{
+	height : 30,
+	width: Ti.UI.FILL,
+},
+".iconBig":{
+	width : 25,
+	height : 25,
+	left : 6,
+	right : 6
+},
+".iconNav" : {
+	
+	width : 20,
+	height : 20,
+	left : 6,
+	right : 6
+},
+".txtborder" : {
+	borderWidth : 1,
+	borderColor : Alloy.CFG.Colors.MainColor,
+},
+".btnInquiry" : {
+	backgroundColor : Alloy.CFG.Colors.MainColor,
+	backgroundSelectedColor : Alloy.CFG.Colors.MainColor_Dark,
+	borderColor : Alloy.CFG.Colors.MainPressedColor,
+	color : Alloy.CFG.Colors.TextColor,
+	backgroundImage : "null",
+	selectedColor : "#AAA"
+},
+".line" : {
+	backgroundImage : "/images/line.png",
+	height : 1,
+	width : Ti.UI.FILL
+},
+".thumbImgScrollView" : {
+	layout : "horizontal",
+	width : Ti.UI.FILL,
+	showHorizontalScrollIndicator : true,
+	showVerticalScrollIndicator : false,
+	scrollType : "horizontal",
+	contentWidth : 1250,
+}
+

@@ -1,0 +1,25 @@
+
+".win": {
+	backgroundColor:Alloy.CFG.Colors.MainColor,
+	navBarHidden : true,
+	exitOnClose : true,
+	width : Ti.UI.FILL,
+	height : Ti.UI.FILL
+},
+
+
+".menu" : {
+	backgroundImage :"/images/menu.png",
+	backgroundSelectedImage : "/images/menu_pressed.png",
+	width : 40,
+	height : 40,
+	left : 0
+},
+
+".icon" : {
+	width : 20,
+	height : 20,
+	left : 5,
+	right :5
+}
+

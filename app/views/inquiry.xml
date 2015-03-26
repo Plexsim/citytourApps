@@ -1,0 +1,50 @@
+<Alloy>
+	<Window class="container" >
+		<View  class="title-bg">
+	    	<View class="h-size" id="AppWrapper">
+			    <Label id="mainTitle" class="title links" text="Send Inquiry" left="25" onClick="closeWindow"></Label>
+				<ImageView id="imgBack" class="iconBig left0" onClick="closeWindow"></ImageView>
+			</View>
+		</View>
+		<ScrollView class="inquireView" layout="vertical">
+					
+				<View class="ver w-fill h-size top1 left3 right3" id="reviewEntryView">
+					<View  class="h-size w-size hor top1" left="0">
+						<ImageView class="top3 icon" id="imgInquiryMessage">
+						</ImageView>
+						<Label class="p-strong text-left h-size" top="11" color="#464646" id="lblInquiryMessage">
+							Your Inquiry Message
+						</Label>
+					</View>
+					<TextArea class="txtArea span12 txtborder top1" id="txtMessage" hintText="Inquiry Message" ></TextArea>
+					
+					<View  class="h-size w-size hor top1" left="0">
+						<ImageView class="top3 icon" id="imgInquiryName">
+						</ImageView>
+						<Label class="p-strong text-left h-size" top="13" color="#464646" id="lblYourName">
+							Your Name
+						</Label>
+					</View>
+					<TextField class="txt span12 txtborder top1" id="txtName" hintText="User Name" ></TextField>
+					
+					<View  class="h-size w-size hor top1" left="0">
+						<ImageView class="top3 iconSmall" id="imgInquiryEmail">
+						</ImageView>
+						<Label class="p-strong text-left h-size" top="9" color="#464646" id="lblEmail">
+							Email
+						</Label>
+					</View>
+					
+					<TextField class="txt span12 txtborder top1" id="txtEmail" hintText="Email" ></TextField>
+					
+					
+					<Button id="btnSend" class=" p top4 bottom2 span12 btnInquiry" title=" Send Inquiry " onClick="doInquiry"/>
+				
+					
+				</View>
+				
+				
+		</ScrollView>
+	</Window>
+
+</Alloy>

@@ -1,0 +1,6 @@
+
+".container" : {
+  backgroundColor:Alloy.CFG.Colors.BackgroundColor,
+  width : Ti.UI.FILL,
+  height : Ti.UI.FILL
+}

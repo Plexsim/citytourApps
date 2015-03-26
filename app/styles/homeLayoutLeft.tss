@@ -1,0 +1,39 @@
+
+".container" : {
+  width : Ti.UI.FILL,
+  height : Ti.UI.SIZE,
+  backgroundColor:Alloy.CFG.Colors.BackgroundColor
+  
+},
+
+".left_img" : {
+	borderWidth : 1,
+	borderColor : "#FFF",
+	width : 213,
+	height : 150,
+}
+
+".right_img" : {
+	
+	width : 107,
+	height : 75,
+	borderWidth : '1',
+	borderColor : "#FFF"
+}
+
+".borderA" : {
+	borderColor : '#FFF',
+	borderWidth : '1'
+},
+".shadow" : {
+	backgroundImage : "/images/shadow.png",
+	width : 320,
+	height : 56,
+	opacity: 0.8
+},
+".icon" : {
+	width : 20,
+	height : 20,
+	left : 5,
+	right :5
+}

@@ -1,0 +1,3 @@
+<Alloy>
+		<View id="itemGridView" class="h-fill w-fill" top='0' backgroundColor="white"></View>
+</Alloy>

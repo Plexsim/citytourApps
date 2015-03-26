@@ -1,0 +1,23 @@
+".imgFeed" : {
+	width : 50,
+	height : 50,
+	borderRadius : 25
+	//image : "/images/reviewer/reviewer1.png"
+},
+".icon" : {
+	width : 20,
+	height : 20,
+	left : 5,
+	right :5
+},
+".line" : {
+	backgroundImage : "/images/line.png",
+	height : 1,
+	width : Ti.UI.FILL
+},
+".iconSmall" : {
+	width : 15,
+	height : 15,
+	left : 5,
+	right :5
+}
